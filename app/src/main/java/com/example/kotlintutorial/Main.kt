@@ -6,8 +6,8 @@ fun main(args: Array<String>){
     cs = "Computer Science"
     println(cs)
 
-    var csSalary: Int = 32
-    var monthly: Int = csSalary * 4
-    println(csSalary)
-    println(monthly)
+    var csWeeklySalary: Int = 32
+    var csMonthlySalary: Int = csWeeklySalary * 4
+    println(csWeeklySalary)
+    println(csMonthlySalary)
 }

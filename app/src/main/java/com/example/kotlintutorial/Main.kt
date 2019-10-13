@@ -19,4 +19,9 @@ fun main(args: Array<String>){
     println(fruit)
 
     println(apples / 4 )
+
+    println()
+    val week: Int = 130
+    val years: Double = week / 52.0
+    println(years)
 }

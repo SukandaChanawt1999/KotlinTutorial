@@ -6,8 +6,15 @@ fun main(args: Array<String>){
     cs = "Computer Science"
     println(cs)
 
-    var x: Int = 32
-    var y: Int = x * 4
-    println(x)
-    println(y)
+    var csWeeklySalary: Int = 32
+    var csMonthlySalary: Int = csWeeklySalary * 4
+    println(csWeeklySalary)
+    println(csMonthlySalary)
+
+    println()
+
+    val apples: Int = 6
+    val oranges: Int = 5
+    var fruit: Int = apples - oranges
+    println(fruit)
 }

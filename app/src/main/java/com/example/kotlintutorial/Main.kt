@@ -17,4 +17,6 @@ fun main(args: Array<String>){
     val oranges: Int = 5
     var fruit: Int = apples - oranges
     println(fruit)
+
+    println(apples / 4 )
 }

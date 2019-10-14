@@ -8,15 +8,15 @@ fun main(args: Array<String>){
 
     var csWeeklySalary: Int = 32
     var csMonthlySalary: Int = csWeeklySalary * 4
-    println(csWeeklySalary)
-    println(csMonthlySalary)
+    println("Cs's weekly salary is $csWeeklySalary")
+    println("Monthly, that comes to $csMonthlySalary")
 
     println()
 
     val apples: Int = 6
     val oranges: Int = 5
     var fruit: Int = apples - oranges
-    println(fruit)
+    println("$apples apples - $oranges oranges leaves $fruit piece(s) of fruit")
 
     println("A quarter of the apples is ${apples / 4 } " )
 

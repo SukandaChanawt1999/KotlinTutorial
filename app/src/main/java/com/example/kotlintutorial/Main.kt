@@ -18,7 +18,7 @@ fun main(args: Array<String>){
     var fruit: Int = apples - oranges
     println(fruit)
 
-    println(apples / 4 )
+    println("A quarter of the apples is ${apples / 4 } " )
 
     println()
     val weeks: Int = 234

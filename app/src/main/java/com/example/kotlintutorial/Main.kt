@@ -13,13 +13,18 @@ fun main(args: Array<String>){
     println("age is $age")
 
     val message: String
-    message =  if (age < 18){
-        "You're too young to vote"
-    }else if (age == 100){
-        "Congratulations"
-    }else{
-        "You can vote"
+    message = when {
+        age < 18 -> "You're too young to vote"
+        age == 100 -> "Congratulations"
+        else -> "You can vote"
     }
+//    message =  if (age < 18){
+//        "You're too young to vote"
+//    }else if (age == 100){
+//        "Congratulations"
+//    }else{
+//        "You can vote"
+//    }
     println(message)
 
 }

@@ -23,7 +23,7 @@ fun main(args: Array<String>){
     println()
     val week: Int = 130
     val years: Double = week / 52.0
-    println(years)
+    println("130 weeks is years is:" + years)
 
     println("My name is " + cs)
 }

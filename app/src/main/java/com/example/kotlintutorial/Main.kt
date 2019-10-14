@@ -26,6 +26,7 @@ fun main(args: Array<String>){
     println("$weeks weeks is $years years")
 
     println("My name is $cs")
+    println("I can print \$cs")
 
 
 }

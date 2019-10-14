@@ -1,7 +1,7 @@
 fun main(args: Array<String>){
     println("Hello World")
     println("My name is Sukanda Chanawat")
-
+    var sc: String
     var cs: String
     cs = "Computer Science"
     println(cs)
@@ -25,8 +25,9 @@ fun main(args: Array<String>){
     val years: Double = weeks / 52.0
     println("$weeks weeks is $years years")
 
+    sc = "Sukanda Chanawat"
     println("My name is $cs")
-    println("I can print \$cs")
+    println("sc is $sc")
 
 
 }

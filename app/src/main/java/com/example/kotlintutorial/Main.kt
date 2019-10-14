@@ -1,5 +1,5 @@
 fun main(args: Array<String>){
-    val lives = 3
+    val lives = 0
     var isGameOver = (lives < 1)
     println(isGameOver)
     if (isGameOver ){

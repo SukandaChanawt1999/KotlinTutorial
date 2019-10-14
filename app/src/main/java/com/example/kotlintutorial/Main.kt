@@ -21,9 +21,11 @@ fun main(args: Array<String>){
     println(apples / 4 )
 
     println()
-    val week: Int = 130
-    val years: Double = week / 52.0
+    val weeks: Int = 130
+    val years: Double = weeks / 52.0
     println("130 weeks is years is:" + years)
+
+    println("My name is $cs")
 
     println("My name is " + cs)
 }

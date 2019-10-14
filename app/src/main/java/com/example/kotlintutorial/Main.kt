@@ -8,7 +8,7 @@ fun main(args: Array<String>){
 
     var csWeeklySalary: Int = 32
     var csMonthlySalary: Int = csWeeklySalary * 4
-    println("Cs's weekly salary is $csWeeklySalary")
+    println("Cs's $ weekly salary is $$csWeeklySalary")
     println("Monthly, that comes to $csMonthlySalary")
 
     println()

@@ -21,7 +21,6 @@ class Player(val name: String,var level: Int = 1, var lives: Int = 3, var score:
             level: $level
             score: $score
             weapon: ${weapon}
-//            damage: ${weapon.damageInflicted}
             """
     }
 

@@ -1,7 +1,7 @@
 import com.example.kotlintutorial.Player
 
 fun main(args: Array<String>){
-    for (i in 10 downTo  0){
+    for (i in 10 downTo 0 step 2){
         println("$i squared is ${i * i}")
     }
 //    val tim = Player("Tim")

@@ -52,6 +52,9 @@ fun main(args: Array<String>){
 
     if (tim.dropLoot(redPotion)){
         tim.showInventory()
+    }else{
+        println("you don't have a ${redPotion.name}")
     }
+
     println(tim.toString())
 }

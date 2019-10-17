@@ -49,5 +49,9 @@ fun main(args: Array<String>){
     tim.getLoot(Loot("Ring of Protection +2",LootType.RING,40.25))
     tim.getLoot(Loot("Invisibility Potion",LootType.POTION,35.95))
     tim.showInventory()
+
+    if (tim.dropLoot(redPotion)){
+        tim.showInventory()
+    }
     println(tim.toString())
 }

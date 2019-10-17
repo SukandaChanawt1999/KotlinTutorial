@@ -17,4 +17,10 @@ class Player(val name: String,var level: Int = 1, var lives: Int = 3, var score:
             damage: ${weapon.damageInflicted}
             """)
     }
+
+    fun showInventory(){
+        println("$name's Inventory")
+        println(inventory.get(0))
+        println("==============================")
+    }
 }

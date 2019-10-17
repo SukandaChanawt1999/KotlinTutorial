@@ -8,4 +8,8 @@ fun main(args: Array<String>){
 //    println(tim.score)
     tim.show()
 
+    val louise = Player("Louise")
+    louise.level = 5
+    louise.show()
+
 }

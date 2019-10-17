@@ -33,6 +33,10 @@ fun main(args: Array<String>){
 //    println(tim.weapon.name)
     tim.show()
 
+    louise.weapon = tim.weapon
+    louise.show()
+
     tim.weapon = Weapon("Spear",14)
-    println(tim.weapon.name)
+//    println(tim.weapon.name)
+    tim.show()
 }

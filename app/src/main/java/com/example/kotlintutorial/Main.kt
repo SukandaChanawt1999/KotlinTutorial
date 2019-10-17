@@ -42,6 +42,8 @@ fun main(args: Array<String>){
 
     val redPotion = Loot("Red Potion",LootType.POTION,7.50)
     tim.inventory.add(redPotion)
+    val chesArmor = Loot("+3 Chest Armor",LootType.ARMOR,80.00)
+    tim.inventory.add(chesArmor)
     tim.showInventory()
     println(tim.toString())
 }

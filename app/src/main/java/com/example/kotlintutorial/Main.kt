@@ -24,4 +24,7 @@ fun main(args: Array<String>){
     gr8.weapon = axe
     println(gr8.weapon.name)
     println(axe.name)
+
+    axe.damageInflicted = 24
+    println(axe.damageInflicted)
 }

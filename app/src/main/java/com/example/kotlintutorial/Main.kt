@@ -4,6 +4,11 @@ fun main(args: Array<String>){
     for (i in 10 downTo 0 step 2){
         println("$i squared is ${i * i}")
     }
+    for (value in 3..100 step 3){
+        if (value % 5 == 0){
+            println(value)
+        }
+    }
 //    val tim = Player("Tim")
 ////    println(tim.name)
 ////    println(tim.lives)

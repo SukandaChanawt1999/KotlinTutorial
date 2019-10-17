@@ -19,4 +19,9 @@ fun main(args: Array<String>){
 
     println(one2watch.weapon.name.toUpperCase())
     println(one2watch.weapon.damageInflicted)
+
+    val axe= Weapon("Axe",12)
+    gr8.weapon = axe
+    println(gr8.weapon.name)
+    println(axe.name)
 }

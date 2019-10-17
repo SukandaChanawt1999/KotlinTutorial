@@ -8,7 +8,7 @@ fun main(args: Array<String>){
 //    println(tim.score)
     tim.show()
 
-    val louise = Player("Louise")
+    val louise = Player("Louise",5)
     louise.level = 5
     louise.show()
 

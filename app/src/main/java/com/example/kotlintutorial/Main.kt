@@ -17,8 +17,8 @@ fun main(args: Array<String>){
     enemy.takeDamage(11)
     print(enemy)
 
-    val uglyTroll = Troll("Ugly Troll",27,1)
+    val uglyTroll = Troll("Ugly Troll")
     println(uglyTroll)
-    uglyTroll.takeDamage(8)
+    uglyTroll.takeDamage(30)
     println(uglyTroll)
 }

@@ -25,6 +25,9 @@ fun main(args: Array<String>) {
     conan.getLoot(Loot("Silver Ring", LootType.RING, 6.0))
     conan.getLoot(Loot("Silver Ring", LootType.RING, 6.0))
     conan.showInventory()
+
+    conan.dropLoot("Gold Ring")
+    conan.showInventory()
 }
 
 

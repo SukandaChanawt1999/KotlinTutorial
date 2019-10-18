@@ -2,6 +2,8 @@ package com.example.kotlintutorial
 
 import Loot
 import Weapon
+import android.os.Build
+import androidx.annotation.RequiresApi
 
 class Player(val name: String,var level: Int = 1, var lives: Int = 3, var score: Int = 0 ) {
     var weapon: Weapon = Weapon("Fist",1)
@@ -37,9 +39,10 @@ class Player(val name: String,var level: Int = 1, var lives: Int = 3, var score:
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.N)
     fun dropLoot(name: String): Boolean{
         println("$name will be dropped")
-        return true
+        return inventory.removeIf { it.name == name }
     }
 
     fun showInventory(){

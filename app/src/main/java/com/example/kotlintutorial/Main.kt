@@ -23,20 +23,12 @@ fun main(args: Array<String>){
 //    conan.getLoot(Loot("Silver Ring", LootType.RING,6.0))
 //    conan.showInventory()
 
-//    val uglyTroll = Troll("Ugly Troll")
-//    println(uglyTroll)
-//    uglyTroll.takeDamage(30)
-//    println(uglyTroll)
-//
-//    val vlad = Vampyre("Vlad")
-//    println(vlad)
-//    vlad.takeDamage(8)
-//    println(vlad)
-//
 
-    for (i in 1..10){
+//    for (i in 1..10){
         val dracula = VampyreKing("Dracula")
         println(dracula)
+
+    dracula.lives = 0
 
         while (dracula.lives > 0){
             if (dracula.dodges()){
@@ -52,4 +44,3 @@ fun main(args: Array<String>){
         println("------------------------------------------")
     }
 
-}

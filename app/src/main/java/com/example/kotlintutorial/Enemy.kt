@@ -1,7 +1,7 @@
 package com.example.kotlintutorial
 
 open class Enemy (val name: String, var hitPoints: Int, var lives: Int){
-    fun takeDamage(damage: Int){
+    open fun takeDamage(damage: Int){
         val remainingHitPoints = hitPoints - damage
         if (remainingHitPoints > 0 ){
             hitPoints = remainingHitPoints

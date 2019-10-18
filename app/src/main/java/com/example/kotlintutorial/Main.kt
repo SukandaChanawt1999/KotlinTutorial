@@ -63,4 +63,6 @@ fun main(args: Array<String>){
         println("You don't have ${bluePotion.name}")
     }
 
+    tim.dropLoot("Invisibility Potion")
+
 }

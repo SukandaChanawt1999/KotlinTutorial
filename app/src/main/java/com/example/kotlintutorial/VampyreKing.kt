@@ -8,4 +8,12 @@ class VampyreKing(name: String) : Vampyre(name) {
     override fun takeDamage(damage: Int) {
         super.takeDamage(damage / 2)
     }
+
+    fun runAway(): Boolean{
+        if (lives < 2){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }

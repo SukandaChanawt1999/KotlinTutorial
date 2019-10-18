@@ -2,6 +2,7 @@
 import android.os.Build
 import androidx.annotation.RequiresApi
 import com.example.kotlintutorial.Enemy
+import com.example.kotlintutorial.Troll
 
 
 @RequiresApi(Build.VERSION_CODES.N)
@@ -15,4 +16,7 @@ fun main(args: Array<String>){
 
     enemy.takeDamage(11)
     print(enemy)
+
+    val uglyTroll = Troll("Ugly Troll",27,1)
+    println(uglyTroll)
 }

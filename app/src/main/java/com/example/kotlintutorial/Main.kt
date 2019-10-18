@@ -23,6 +23,9 @@ fun main(args: Array<String>){
     println(dracula)
 
     while (dracula.lives > 0){
+        if (dracula.dodges()){
+            continue;
+        }
         if (dracula.runAway()){
             println("Dracula ran away")
             break

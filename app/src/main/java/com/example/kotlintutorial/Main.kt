@@ -29,6 +29,17 @@ fun main(args: Array<String>) {
 
     conan.dropLoot("Silver Ring")
     conan.showInventory()
+
+    val dropped = conan.dropLoot("Something not present")
+    println(dropped)
+
+    println(conan.dropLoot("Something else"))
+
+    if (conan.dropLoot("A bit of junk")){
+        println("junk dropped")
+    }else{
+        println("You don't have any junk")
+    }
 }
 
 

@@ -15,7 +15,7 @@ fun main(args: Array<String>){
     conan.getLoot(Loot("Mithril", LootType.ARMOR,183.0))
     conan.getLoot(Loot("Ring of speed", LootType.RING,25.0))
     conan.getLoot(Loot("Red Potion", LootType.POTION,2.0))
-    conan.getLoot(Loot("Cursed Shield", LootType.ARMOR,-8.0))
+//    conan.getLoot(Loot("Cursed Shield", LootType.ARMOR,-8.0))
     conan.getLoot(Loot("Brass Ring", LootType.RING,1.0))
     conan.getLoot(Loot("Chin Mail", LootType.ARMOR,4.0))
     conan.getLoot(Loot("Gold Ring", LootType.RING,12.0))

@@ -32,13 +32,14 @@ fun main(args: Array<String>){
 
         do{
             if (dracula.dodges()){
+                dracula.lives += 1
                 continue;
             }
             if (dracula.runAway()){
                 println("Dracula ran away")
                 break
             }else{
-                dracula.takeDamage(12)
+                dracula.takeDamage(80)
             }
         }while (dracula.lives > 0)
         println("------------------------------------------")

@@ -14,7 +14,7 @@ fun main(args: Array<String>){
     uglyTroll.takeDamage(30)
     println(uglyTroll)
 
-    val vlad = Vampyre("Vlad")
+    val vlad = Vampyre("Vlad",2)
     println(vlad)
     vlad.takeDamage(8)
     println(vlad)

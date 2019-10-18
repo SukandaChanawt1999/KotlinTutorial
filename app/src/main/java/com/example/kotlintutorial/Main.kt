@@ -23,6 +23,10 @@ fun main(args: Array<String>){
     println(dracula)
 
     while (dracula.lives > 0){
+        if (dracula.runAway()){
+            println("Dracula ran away")
+        }else{
             dracula.takeDamage(12)
         }
+    }
 }

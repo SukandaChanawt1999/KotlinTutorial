@@ -10,10 +10,6 @@ class VampyreKing(name: String) : Vampyre(name) {
     }
 
     fun runAway(): Boolean{
-        if (lives < 2){
-            return true;
-        }else{
-            return false;
-        }
+        return lives < 2
     }
 }

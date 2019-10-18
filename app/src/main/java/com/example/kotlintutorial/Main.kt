@@ -30,7 +30,7 @@ fun main(args: Array<String>){
 
     dracula.lives = 0
 
-        while (dracula.lives > 0){
+        do{
             if (dracula.dodges()){
                 continue;
             }
@@ -40,7 +40,7 @@ fun main(args: Array<String>){
             }else{
                 dracula.takeDamage(12)
             }
-        }
+        }while (dracula.lives > 0)
         println("------------------------------------------")
     }
 

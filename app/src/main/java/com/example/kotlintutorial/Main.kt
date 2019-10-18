@@ -21,4 +21,5 @@ fun main(args: Array<String>){
 
     val dracula = VampyreKing("Dracula")
     println(dracula)
+    dracula.takeDamage(12)
 }

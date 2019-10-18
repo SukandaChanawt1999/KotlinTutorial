@@ -5,4 +5,7 @@ class VampyreKing(name: String) : Vampyre(name) {
         hitPoints = 140
     }
 
+    override fun takeDamage(damage: Int) {
+        super.takeDamage(damage / 2)
+    }
 }

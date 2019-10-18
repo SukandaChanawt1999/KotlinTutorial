@@ -6,8 +6,6 @@ import com.example.kotlintutorial.Troll
 import com.example.kotlintutorial.Vampyre
 import com.example.kotlintutorial.VampyreKing
 
-
-@RequiresApi(Build.VERSION_CODES.N)
 fun main(args: Array<String>) {
 
     val conan = Player("Conan")
@@ -27,6 +25,9 @@ fun main(args: Array<String>) {
     conan.showInventory()
 
     conan.dropLoot("Gold Ring")
+    conan.showInventory()
+
+    conan.dropLoot("Silver Ring")
     conan.showInventory()
 }
 

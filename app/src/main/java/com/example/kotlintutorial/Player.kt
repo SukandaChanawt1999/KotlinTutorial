@@ -6,16 +6,17 @@ import android.os.Build
 import androidx.annotation.RequiresApi
 
 class Player(val name: String,var level: Int = 1, var lives: Int = 3, var score: Int = 0 ) {
-    var weapon: Weapon = Weapon("Fist",1)
+    var weapon: Weapon = Weapon("Fist", 1)
     private val inventory = ArrayList<Loot>()
 
-    fun show(){
-        if (lives > 0){
+    fun show() {
+        if (lives > 0) {
             println("$name is alive")
-        }else{
+        } else {
             println("$name is dead")
         }
     }
+
     override fun toString(): String {
         return """
             name: $name
@@ -26,29 +27,43 @@ class Player(val name: String,var level: Int = 1, var lives: Int = 3, var score:
             """
     }
 
-    fun getLoot(item: Loot){
+    fun getLoot(item: Loot) {
         inventory.add(item)
     }
 
-    fun dropLoot(item: Loot): Boolean{
-        return if (inventory.contains(item)){
+    fun dropLoot(item: Loot): Boolean {
+        return if (inventory.contains(item)) {
             inventory.remove(item)
             true
-        }else{
+        } else {
             false
         }
     }
 
 
-    fun dropLoot(name: String): Boolean{
-       for (item in inventory){
-           if (item.name == name){
-               inventory.remove(item)
-               return true
-           }
-       }
-        return false
+//    fun dropLoot(name: String): Boolean{
+//       for (item in inventory){
+//           if (item.name == name){
+//               inventory.remove(item)
+//               return true
+//           }
+//       }
+//        return false
+//    }
+
+    fun dropLoot(name: String): Boolean {
+        var result = false
+        for (item in inventory) {
+            if (item.name == name){
+                inventory.remove(item)
+                result = true
+                break
+            }
+
+        }
+        return result
     }
+
 
     fun showInventory(){
         var total = 0.0
